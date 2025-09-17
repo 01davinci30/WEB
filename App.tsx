@@ -1,5 +1,4 @@
 
-import React from 'react';
 import AnimatedBackground from './components/AnimatedBackground';
 import { VideoIcon } from './components/icons/VideoIcon';
 import { BrushIcon } from './components/icons/BrushIcon';
@@ -99,7 +98,8 @@ const App: React.FC = () => {
             {services.map((service, index) => (
               <div key={index} className="bg-gray-900/50 backdrop-blur-md border border-cyan-500/20 rounded-lg overflow-hidden transform hover:scale-105 hover:border-cyan-400 transition-all duration-300 flex flex-col">
                 <div className="aspect-video">
-                  <img src={service.imageUrl} alt={service.title} className="w-full h-full object-cover"/>
+                  <img src={service.imageUrl} alt={`Imagen de ${service.title}`} className="w-full h-full object-cover" />
+
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
                     <div className="flex justify-center">{service.icon}</div>
@@ -177,7 +177,7 @@ const App: React.FC = () => {
         <footer className="bg-black bg-opacity-40 py-12">
             <div className="container mx-auto px-4 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-cyan-300 text-glow tracking-widest uppercase">Contacto</h2>
-              <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 mb-8 text-lg">
+                <div className="flex flex-col md:flex-row justify-center items-center gap-x-8 gap-y-4 mb-8 text-lg">
                 <div className="flex items-center"><LocationIcon className="h-6 w-6 mr-2 text-cyan-400" /> BOGOTA D.C</div>
                 <a href="https://wa.me/573046199264" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-cyan-400 transition-colors"><WhatsappIcon className="h-6 w-6 mr-2" /> 304 619 9264</a>
                 <a href="mailto:gabriel0130leuro@gmail.com" className="flex items-center hover:text-cyan-400 transition-colors"><MailIcon className="h-6 w-6 mr-2" /> gabriel0130leuro@gmail.com</a>
