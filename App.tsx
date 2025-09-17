@@ -1,4 +1,5 @@
 
+import React from "react";
 import AnimatedBackground from './components/AnimatedBackground';
 import { VideoIcon } from './components/icons/VideoIcon';
 import { BrushIcon } from './components/icons/BrushIcon';
